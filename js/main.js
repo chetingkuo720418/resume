@@ -27,7 +27,7 @@ function help(){
     <td>Download Che-Ting Kuo's CV</td>\
   </tr>\
   <tr>\
-    <td>Cellist</td>\
+    <td>cellist</td>\
     <td>Never Gonna Give You Up</td>\
   </tr></table>";
 }

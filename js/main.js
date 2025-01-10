@@ -23,6 +23,10 @@ function help(){
     <td>Get to know how good Che-Ting Kuo is at stuff</td>\
   </tr>\
   <tr>\
+    <td>training</td>\
+    <td>Get to know how professional training courses for Che-Ting Kuo</td>\
+  </tr>\
+  <tr>\
     <td>cv</td>\
     <td>Download Che-Ting Kuo's CV</td>\
   </tr>\
@@ -107,6 +111,16 @@ function links(){
   </ul>";
 }
 
+function training(){
+  return "<h2><span style=\"color:#81a2be;\">Training:</span></h2><table>\
+  <tr>\
+    <td>CEH (Information Security)</td>\
+  </tr>\
+  <tr>\
+    <td>Polkadot (blockchain and decentralized system)</td>\
+  </tr></table>"
+}
+
 function cellist(){
   return "<p>D   A   Bm  F#m G   D   G   A <br>\
     D   A   Bm  F#m G   D   G   A <br>\
@@ -132,7 +146,7 @@ function commandProcessor(e){
     if(txtInput == "help"){
       document.getElementById('injected').innerHTML=help();
     }else if (txtInput=="all") {
-      document.getElementById('injected').innerHTML=about() + "\n\n\n" + skills() + "\n\n\n" + links() + "\n\n\n" + contact() + "\n\n\n" + cv();
+      document.getElementById('injected').innerHTML=about() + "\n\n\n" + skills() + "\n\n\n" + training() + "\n\n\n" + links() + "\n\n\n" + contact() + "\n\n\n" + cv();
     }else if (txtInput == "about") {
       document.getElementById('injected').innerHTML=about();
     }else if (txtInput == "contact") {
@@ -141,6 +155,8 @@ function commandProcessor(e){
       document.getElementById('injected').innerHTML=cv();
     }else if (txtInput=="skills") {
       document.getElementById('injected').innerHTML=skills();
+    } else if (txtInput == "training"){
+      document.getElementById('injected').innerHTML=training();
     }else if (txtInput=="links") {
       document.getElementById('injected').innerHTML=links();
     }else if (txtInput == "cellist") {
